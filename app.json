@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cameraScreem",
-    "slug": "cameraScreem",
+    "name": "cameraScreen",
+    "slug": "cameraScreen",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,13 +12,19 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to allow you to take photos.",
+        "NSMicrophoneUsageDescription": "We need access to your microphone to allow you to record videos."
+      },
+      "bundleIdentifier": "com.rafaelneves1991.cameraScreen"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rafaelneves1991.cameraScreen"
     },
     "web": {
       "favicon": "./assets/favicon.png"
